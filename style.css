@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #1f0710;
+    /*font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+    font-family: Verdana, sans-serif;
+    font-family: Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-family:  Garamond, "Apple Garamond", "ITC Garamond Narrow", "URW Palladio L", Palatino, Palladio, "EB Garamond", serif;
+    font-family: "Trebuchet MS", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", Verdana, "Verdana Ref", sans-serif;
+    font-family: Impact, Haettenschweiler, _Nimbus-BC, _LiberationSansNarrow-B, "Arial Black", Anton, sans-serif;
+    font-family: Courier, "Courier New", "FreeMono", "Nimbus Mono PS", Cousine, monospace;*/
+    font-family: Helvetica, Arial, sans-serif;
+    filter:blur();
+}
+.content {
+    margin: 20px;
+    
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4b1228;
+  }
+  
+.navitem {
+    float: left;
+  }
+  
+  
+.navitem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.navitem a:hover:not(.active) {
+    background-color: #1f0710;
+  }
+
