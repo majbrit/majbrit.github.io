@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="90.222771mm"
+   height="90.222977mm"
+   viewBox="0 0 90.222771 90.222977"
+   version="1.1"
+   id="svg7239"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="msNeu3.svg">
+  <defs
+     id="defs7233" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="333.35687"
+     inkscape:cy="-32.357034"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1102"
+     inkscape:window-x="-10"
+     inkscape:window-y="-10"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7236">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-17.632661,-50.049224)">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.26458287px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 62.744053,105.74412 73.327373,50.181515 H 107.72314 V 140.13991 H 86.556513 V 97.806615 L 73.327373,140.13991 H 52.160722 L 38.931583,95.160814 V 140.13991 H 17.764952 V 50.181515 h 34.39577 z"
+       id="path4023-7-7-7-6-9-8-1-6-6-8"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.96392822px;line-height:1.25;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.97409832"
+       x="66.738472"
+       y="120.8111"
+       id="text2992-5-9-64-1-4-9-0-9-6-1"
+       transform="scale(0.9977432,1.0022619)"><tspan
+         sodipodi:role="line"
+         id="tspan2990-2-4-2-8-9-3-2-0-3-2"
+         x="66.738472"
+         y="120.8111"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT';fill:#ffffff;fill-opacity:1;stroke-width:1.97409832">S</tspan></text>
+  </g>
+</svg>
