@@ -113,7 +113,6 @@
 
 
 body {
-  margin: 0;
   padding: 0;
   background-color: var(--color12);
   /*color: var(--color9);*/
@@ -123,7 +122,7 @@ body {
 
 }
 .content {
-  margin: 20px;  
+  margin: 20px 10%;  
   display: grid;
 }
 
@@ -219,4 +218,8 @@ body {
 .ms {
   filter: drop-shadow(1px 2px 2px var(--down)) blur(0.2px);
   margin-right: 40px;
+}
+
+.normal-button {
+  width: 30%;
 }
