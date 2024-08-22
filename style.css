@@ -111,24 +111,81 @@
 
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   padding: 0;
+  margin: 0;
+
   background-color: var(--color12);
   /*color: var(--color9);*/
   color: var(--color11);
   font-family: 'Noto Sans';
   font-weight: 300;
 
+  height: 100vh;
+
+
+}
+.page {
+  position: relative;
+  
+  min-height: 100%;
+  margin: 0px auto; 
 }
 .content {
   margin: 20px 10%;  
   display: grid;
+  padding-bottom: 200px;
+}
+
+.space {
+  height: 20px;
+}
+
+.footer {
+  margin: 20px;
+
+  overflow: hidden;
+  background-color: var(--color10);
+  border-radius: 5px;
+
+  box-shadow: 1px 2px 2px var(--down), -1px -2px 2px var(--up), inset 0.5px 0.5px 2px var(--up2), inset -0.5px -0.5px 2px var(--down2);
+
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% - 80px);
+  padding: 0px 15px;
+
+}
+.foot {
+  position: relative;
+  width: 100%;
+}
+.footer a {
+  float: right;
+  display: block;
+  color: var(--color11);
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  
+}
+.name {
+  position: absolute;
+  padding-left: 16px;
 }
 
 .navbar {
-  list-style-type: none;
-  margin: 20px;
+  /*height: 52px;*/
+  
+  margin: 0px 20px;
+  top: 20px;
   padding: 0;
   overflow: hidden;
  /* background-color: var(--color10);*/
@@ -143,9 +200,17 @@ body {
 
   /*box-shadow: 1px 2px 4px var(--down), -1px -2px 3px var(--up), inset 1px 2px 1px var(--up2), inset -1px -2px 4px var(--down2);*/
 }
+
+.navlist {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
   
 .navitem {
-  float: right;
+  float: left;
+
 }
   
   
@@ -172,11 +237,19 @@ body {
  /* color: var(--color9);*/
   text-align: center;
   padding: 14px 16px 0px 16px;
+
+  margin: 0px;
   text-decoration: none;
   font-family: 'Satisfy';
   font-size: 20px;
   float: left;
 }
+
+
+
+
+
+
 
 .handwriting {
   font-family: 'Satisfy';
@@ -213,13 +286,42 @@ body {
 .item {
   align-items: center;
   margin-top: 60px;
+  height: 100px;
 }
 
 .ms {
+  height: 100%;
   filter: drop-shadow(1px 2px 2px var(--down)) blur(0.2px);
   margin-right: 40px;
 }
 
 .normal-button {
   width: 30%;
+}
+
+
+
+.big {
+  height: 2000px;
+}
+
+
+.bi:hover {
+  fill: magenta;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .navlogo {
+    float: none;
+    padding-bottom: 10px;
+    border-bottom: var(--down) 1px solid;
+  }
+
+  .navlist {
+    float: none;
+  }
+  .navitem {
+    float: none;
+  }
 }

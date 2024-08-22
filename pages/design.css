@@ -9,9 +9,10 @@
     /*margin: 20px;*/
     padding: 30px;
     flex-grow: 4;
-  background-color: #ffffff;
+  background-color: #fdfdfd;
   box-shadow: 1px 2px 4px var(--down);
   text-align: center;
+
 }
 
 img {
@@ -20,8 +21,30 @@ img {
 
 
     padding: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 .pad {
     padding: 10px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+
+    img {
+        max-width: 90%;
+        height: auto;
+        width: auto;
+        max-height: 400px;
+    }
+
+    .design-container {
+        gap: 20px;
+    }
+    
+    .design-item {
+
+        padding: 10px;
+        flex-grow: 1;    
+    }
+  }
