@@ -1,0 +1,75 @@
+body {
+    background-attachment: fixed;
+    background-image: url("../assets/blueBlur.svg"), url("../assets/pinkBlur.svg"), url("../assets/blueBlur.svg"), url("../assets/pinkBlur.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: -300px -300px, -100px 0px, calc(100% + 300px) calc(100% + 300px), calc(100% + 100px) 100%;
+    background-size: 800px, 600px, 800px, 600px;
+}
+
+
+.me-deco {
+    position: relative;
+    width: 345px;
+    height: 370px;
+}
+
+
+
+
+
+
+#deco-lightblue {
+    box-shadow: 1px 2px 4px #39414d33;
+    position: absolute;
+    background-color: #b9d1f8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    left: 120px;
+}
+
+
+#deco-darkblue {
+    box-shadow: 1px 2px 4px #02204933;
+    margin-top: 50px;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-color: #033070;
+    border-radius: 50%;
+
+    left: 0px;
+}
+
+#me-frame {
+    margin-top: 50px;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    left: 0px;
+}
+
+#me {
+    position: absolute;
+    width: 200px;
+    /*border-radius: 50%;*/
+
+    left: 45px;
+    top: 13px;
+}
+
+#deco-pink {
+    box-shadow: 1px 2px 4px #47324533;
+    margin-top: 50px;
+    position: absolute;
+    background-color: #f8b1f3;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+
+    left: 25px;
+}
