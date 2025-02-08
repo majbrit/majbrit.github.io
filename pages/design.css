@@ -1,3 +1,9 @@
+h3 {
+    font-weight: 300;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
 .design-container {
     display: flex;
     /*width: 90vw;*/
@@ -11,8 +17,17 @@
     flex-grow: 4;
   background-color: #fdfdfd;
   box-shadow: 1px 2px 4px var(--down);
+
   text-align: center;
 
+  
+
+
+}
+
+.design-item p {
+    max-width: 30vw;
+    margin: 16px auto;
 }
 
 img {
@@ -46,5 +61,11 @@ img {
 
         padding: 10px;
         flex-grow: 1;    
+    }
+
+    
+    .design-item p {
+        max-width: 90%;
+
     }
   }
