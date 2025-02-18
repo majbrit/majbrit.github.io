@@ -2,6 +2,7 @@
     position: relative;
     width: 345px;
     height: 370px;
+    justify-self: end;
 }
 
 
@@ -63,4 +64,27 @@
     border-radius: 50%;
 
     left: 25px;
+}
+
+
+
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    direction: rtl;
+}
+
+.about-item {
+    direction: ltr;
+}
+
+
+
+@media (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr; 
+    }
+
 }
