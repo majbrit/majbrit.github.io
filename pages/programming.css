@@ -46,20 +46,47 @@ img {
 }
 
 .group-single {
-    background-color: var(--lightblue);
     font-size: 14px;
-    padding: 3px 6px;
-    margin: 3px;
+    padding: 2px 6px;
+    margin: 6px 3px;
     display: inline-block;
-    border-radius: 10px;
+    position: relative;
+    z-index: 3;
 }
+.group-single::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightblue);
+    border-radius: 2px;
+    transform: skew(15deg);
+    opacity: 0.8;
+    z-index: -1;
+}
+
 .tools {
-    background-color: var(--lightpink);
     font-size: 14px;
-    padding: 3px 6px;
-    margin: 3px;
+    padding: 2px 6px;
+    margin: 6px 3px;
     display: inline-block;
-    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+.tools::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightpink);
+    border-radius: 2px;
+    transform: skew(15deg);
+    opacity: 0.8;
+    z-index: -1;
 }
 
 .links {
@@ -76,6 +103,7 @@ img {
 }
 
 .link-item a{
+
     color: white;
     text-decoration: none;
 
