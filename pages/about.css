@@ -48,7 +48,14 @@
 #me {
     position: absolute;
     width: 200px;
-    /*border-radius: 50%;*/
+
+    left: 45px;
+    top: 13px;
+}
+
+#me-svg {
+    position: absolute;
+    width: 200px;
 
     left: 45px;
     top: 13px;
@@ -81,8 +88,14 @@
 }
 
 
-.small-coffee {
-    width: 40px;
+.around-coffee {
+    width: 100%;
+    text-align: center;
+}
+
+#small-coffee {
+    width: 10%;
+
 }
 
 
