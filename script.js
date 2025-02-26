@@ -14,8 +14,6 @@ for (let i = 0; i < lettersTexts.length; i++) {
     ).join("");
 }
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const letters = document.querySelectorAll(".animated-letter");
 
@@ -74,5 +72,25 @@ document.addEventListener("DOMContentLoaded", () => {
             coffee.style.opacity = "0";
             coffee.style.display = 'none';
         });
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".spinning");
+    if(buttons) {
+        for (let i = 0; i < buttons.length; i++) {
+
+            buttons[i].addEventListener("mouseover", (event) => {
+                buttons[i].querySelector(".link-item").style.margin = "4px";
+                buttons[i].querySelector(".link-item").style.padding = `1px 4px`;
+                event.target.style.cursor = "pointer";
+            });
+            buttons[i].addEventListener("mouseout", (event) => {
+                buttons[i].querySelector(".link-item").style.margin = "0px";
+                buttons[i].querySelector(".link-item").style.padding = `5px 8px`;
+                event.target.style.cursor = "default";
+            });
+        }
     }
 });
