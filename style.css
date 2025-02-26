@@ -105,6 +105,9 @@
   --lightpink: #f8b1f3;
   --lightblue: #b9d1f8;
   --darkblue: #033070;
+
+  --lightblue-a: hsla(217, 82%, 85%, 0.3);
+  --lightpink-a: hsla(304, 84%, 83%, 0.3);
 /*
   --color10: #e1e4e9;
   --color12: #e0e2e8;
@@ -404,6 +407,9 @@ body {
 
 
 @media only screen and (max-width: 1024px) {
+  .content {
+    margin: 20px;
+  }
 
   .navlogo {
     float: none;

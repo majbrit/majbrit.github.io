@@ -13,20 +13,6 @@ for (let i = 0; i < lettersTexts.length; i++) {
         `<span class="animated-letter">${letters === " " ? "&nbsp;" : letters}</span>`
     ).join("");
 }
-document.addEventListener("DOMContentLoaded", () => {
-    const coffee = document.getElementById("small-coffee");
-    const me = document.getElementById('me-hover');
-    coffee.style.opacity = "0";
-    coffee.style.display = 'none';
-    me.addEventListener("mouseover", () => {
-        coffee.style.display = 'inline-block';
-        coffee.style.opacity = "1";
-    });
-    me.addEventListener("mouseout", () => {
-        coffee.style.opacity = "0";
-        coffee.style.display = 'none';
-    });
-});
 
 
 
@@ -73,3 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const coffee = document.getElementById("small-coffee");
+    const me = document.getElementById('me-hover');
+
+    if(coffee) {
+        coffee.style.opacity = "0";
+        coffee.style.display = 'none';
+        me.addEventListener("mouseover", () => {
+            coffee.style.display = 'inline-block';
+            coffee.style.opacity = "1";
+        });
+        me.addEventListener("mouseout", () => {
+            coffee.style.opacity = "0";
+            coffee.style.display = 'none';
+        });
+    }
+});

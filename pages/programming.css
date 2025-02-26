@@ -58,7 +58,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--lightblue);
+    background: linear-gradient(135deg, var(--lightblue), var(--lightblue-a));
     border-radius: 2px;
     transform: skew(15deg);
     opacity: 0.8;
@@ -80,7 +80,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--lightpink);
+    background: linear-gradient(135deg, var(--lightpink), var(--lightpink-a));
     border-radius: 2px;
     transform: skew(15deg);
     opacity: 0.8;

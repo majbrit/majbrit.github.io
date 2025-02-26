@@ -3,12 +3,8 @@
     width: 345px;
     height: 370px;
     justify-self: end;
+
 }
-
-
-
-
-
 
 #deco-lightblue {
     box-shadow: 1px 2px 4px #39414d33;
@@ -95,13 +91,32 @@
 
 #small-coffee {
     width: 10%;
-
 }
 
 
 @media (max-width: 1024px) {
+
+    .about-item {
+        width: calc(100vw - 40px);
+    }
+    
+
     .about-container {
         grid-template-columns: 1fr; 
+        gap: 0px;
+        direction: ltr;
     }
 
+    .me-deco {
+        height: 420px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .me-deco {
+        transform: scale(0.7);
+        transform-origin: top right;
+        height: 300px;
+    }
 }
