@@ -7,6 +7,11 @@
     <title>Majbrit Schöttner</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="programming.css">
+    <script>
+        if (localStorage.getItem("darkMode") === "enabled") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
 </head>
 <body>
     <div class="page">
@@ -14,7 +19,12 @@
         <div class="space"></div>
         <header class="header">
             <nav class="navbar">
-                <p class="navlogo">Portfolio</p>
+                <p class="navlogo">Portfolio 
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </p>
                 <ul class="navlist">
                     <li class="navitem"><a href="../index.html">Home</a></li>
                     <li class="navitem"><a href="about.html">Über mich</a></li>

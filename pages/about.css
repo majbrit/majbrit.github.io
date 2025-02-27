@@ -9,7 +9,7 @@
 #deco-lightblue {
     box-shadow: 1px 2px 4px #39414d33;
     position: absolute;
-    background-color: #b9d1f8;
+    background-color: var(--lightblue);
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -24,7 +24,7 @@
     position: absolute;
     width: 240px;
     height: 240px;
-    background-color: #033070;
+    background-color: var(--darkblue);
     border-radius: 50%;
 
     left: 0px;
@@ -61,7 +61,7 @@
     box-shadow: 1px 2px 4px #47324533;
     margin-top: 50px;
     position: absolute;
-    background-color: #f8b1f3;
+    background-color: var(--lightpink);
     width: 320px;
     height: 320px;
     border-radius: 50%;
@@ -120,4 +120,18 @@
         transform-origin: top right;
         height: 300px;
     }
+}
+
+
+
+
+
+/* Darkmode  */
+body.dark-mode #deco-lightblue {
+    background-color: var(--dark-lightblue);
+}
+
+body.dark-mode #deco-pink {
+    background-color: var(--dark-lightpink);
+
 }

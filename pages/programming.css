@@ -6,7 +6,7 @@
 
 .programming-item {
     padding: 30px;
-    background-color: #fdfdfd;
+    background-color: var(--light-paper);
     box-shadow: 1px 2px 4px var(--down);
 }
 
@@ -30,10 +30,6 @@ img {
     width: auto;
     right: -20px;
     bottom: -40px;
-    /*width: calc(40% - 20px);
-    margin-top: -10%;
-    margin-left: calc(60% + 25px);
-    position:relative;*/
     position: absolute;
     padding: 5px;
 }
@@ -97,27 +93,20 @@ img {
     background-color: var(--darkblue);
     font-size: 14px;
     padding: 5px 8px;
-
-    display: inline-block;
-    
+    display: inline-block;  
     z-index: 1;
-
     position: relative;
-
     margin: 0px;
     border-radius: 10px;
-
 }
 
 .link-item a{
-
     color: white;
     text-decoration: none;
-
 }
 
 .link-item .bi:hover {
-    fill: var(--color0);
+    fill: var(--white);
     filter: none;
   }
 
@@ -172,11 +161,33 @@ img {
 
 
 
-
-
   
 @media (max-width: 1024px) {
     .programming-container {
         grid-template-columns: 1fr; 
     }
+}
+
+
+/* Darkmode */
+body.dark-mode .programming-item {
+    background-color: var(--dark-light-paper);
+    box-shadow: 1px 2px 4px var(--dark-lightpink);
+}
+
+body.dark-mode img {
+    box-shadow: 1px 2px 4px var(--dark-lightblue);
+    background-color: var(--black);
+}
+
+body.dark-mode .group-single::before {
+    background: linear-gradient(135deg, var(--dark-lightblue), var(--dark-lightblue-a));
+}
+
+body.dark-mode .tools::before {
+    background: linear-gradient(135deg, var(--dark-lightpink), var(--dark-lightpink-a));
+}
+
+body.dark-mode .link-item .bi:hover {
+    fill: var(--white);
 }

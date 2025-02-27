@@ -1,3 +1,27 @@
+document.documentElement.classList.add("no-transition");
+
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+const body = document.body;
+
+if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("dark-mode");
+
+    if(darkModeToggle){
+        darkModeToggle.checked = true; 
+    }
+    
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            document.documentElement.classList.remove("no-transition");
+        }, 50); 
+    });
+});
+
+
+
 const animationTexts = document.getElementsByClassName("animated-text");
 for (let i = 0; i < animationTexts.length; i++) {
     const letters = animationTexts[i].textContent.split("");
@@ -93,4 +117,23 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener("change", () => {
+            const isDarkMode = darkModeToggle.checked;
+            localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
+            body.classList.toggle("dark-mode", isDarkMode);
+
+        });
+    }
+
 });

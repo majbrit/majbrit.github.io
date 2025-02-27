@@ -69,3 +69,16 @@ img {
 
     }
   }
+
+
+
+/* Darkmode */
+body.dark-mode .design-item {
+    background-color: var(--dark-light-paper);
+    box-shadow: 1px 2px 4px var(--dark-lightpink);
+}
+
+body.dark-mode img {
+    box-shadow: 1px 2px 4px var(--dark-lightblue);
+    background-color: var(--black);
+}
