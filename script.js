@@ -82,22 +82,27 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const coffee = document.getElementById("small-coffee");
-    const me = document.getElementById('me-hover');
+    const coffee = document.getElementById("around-coffee");
+    const me = document.getElementById("me-hover");
+    let hoverTimer;
 
-    if(coffee) {
+    if (coffee && me) {
         coffee.style.opacity = "0";
-        coffee.style.display = 'none';
+        coffee.style.display = "none";
+
         me.addEventListener("mouseover", () => {
-            coffee.style.display = 'inline-block';
-            coffee.style.opacity = "1";
+            hoverTimer = setTimeout(() => {
+                coffee.style.display = "inline-block";
+                coffee.style.opacity = "1";
+            }, 10000); 
         });
+
         me.addEventListener("mouseout", () => {
-            coffee.style.opacity = "0";
-            coffee.style.display = 'none';
+            clearTimeout(hoverTimer); 
         });
     }
 });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

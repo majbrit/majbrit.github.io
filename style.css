@@ -76,8 +76,12 @@
   --black: #000000;
   --white: #FFFFFF;
 
+  --light-paper: #fdfdfd;
   --paper: #f1f2f6;
+  --dark-paper: #101010;
+  --dark-light-paper: hsla(219, 52%, 12%, 0.7);
   --light-background: #e9edf4;
+  --dark-background: #000000;
 
   --down: #abb0ba;
   --up: #fefeff;
@@ -86,10 +90,15 @@
 
   --lightpink: #f8b1f3;
   --lightblue: #b9d1f8;
+  --dark-lightpink: #f737f5;
+  --dark-lightblue: #00ddf7;
   --darkblue: #033070;
+  --dark-white: #fefeff;
 
   --lightblue-a: hsla(217, 82%, 85%, 0.3);
   --lightpink-a: hsla(304, 84%, 83%, 0.3);
+  --dark-lightpink-a: hsla(301, 92%, 59%, 0.3);
+  --dark-lightblue-a: hsla(186, 100%, 48%, 0.3);
 
 
 }
@@ -274,12 +283,18 @@ body {
 .navlogo {
   display: block;
   text-align: center;
-  padding: 14px 16px 0px 16px;
+  
   margin: 0px;
   text-decoration: none;
   font-family: 'Satisfy';
   font-size: 20px;
   float: left;
+  align-items: center;
+}
+
+.logo-text{
+  margin: 14px 16px 9px 16px;
+  display: inline-block;
 }
 
 
@@ -367,54 +382,12 @@ body {
 }
 
 
-@media only screen and (max-width: 1024px) {
-  .content {
-    margin: 20px;
-  }
-
-  .navlogo {
-    float: none;
-    padding-bottom: 10px;
-    border-bottom: var(--down) 1px solid;
-  }
-
-  .navlist {
-    float: none;
-  }
-  .navitem {
-    float: none;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .ms {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-  }
-
-  .handwriting {
-    margin-top: 40px;
-    margin-bottom: 0px;
-  }
-
-  .item {
-    margin-top: 0px;
-  }
-}
-
-
-
-
 
 .switch {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
-  margin-left: 10px;
 }
 
 .switch input { 
@@ -483,37 +456,65 @@ input:checked + .slider:before {
 
 
 
+@media only screen and (max-width: 1024px) {
+  .content {
+    margin: 20px;
+  }
 
-:root {
-  --black: #000000;
-  --white: #FFFFFF;
+  .navlogo {
+    float: none;
+    border-bottom: var(--down) 1px solid;
+    position: relative;
+    align-items: center;
+  }
 
-  --light-paper: #fdfdfd;
-  --paper: #f1f2f6;
-  --dark-paper: #101010;
-  --dark-light-paper: #10161f;
-  --light-background: #e9edf4;
-  --dark-background: #000000;
+  .navlist {
+    float: none;
+  }
+  .navitem {
+    float: none;
+  }
 
-  --down: #abb0ba;
-  --up: #fefeff;
-  --down2: #abb0baf1;
-  --up2: #fefeffec;
+  .container {
+    flex-direction: column;
+  }
 
-  --lightpink: #f8b1f3;
-  --lightblue: #b9d1f8;
-  --dark-lightpink: #f737f5;
-  --dark-lightblue: #00ddf7;
-  --darkblue: #033070;
-  --dark-white: #fefeff;
+  .ms {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+  
+  .ms-content {
+    text-align: center;
+  }
 
-  --lightblue-a: hsla(217, 82%, 85%, 0.3);
-  --lightpink-a: hsla(304, 84%, 83%, 0.3);
-  --dark-lightpink-a: hsla(301, 92%, 59%, 0.3);
-  --dark-lightblue-a: hsla(186, 100%, 48%, 0.3);
+  .handwriting {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .item {
+    margin-top: 0px;
+  }
 
 
+  .switch {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
+
+
+
+
+
+
+
+
 
 
 /* Darkmode  */

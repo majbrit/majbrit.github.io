@@ -84,14 +84,16 @@
 }
 
 
-.around-coffee {
+#around-coffee {
     width: 100%;
     text-align: center;
+    justify-content: center;
+    opacity: 0;
+    margin-top: 20px;
 }
 
 #small-coffee {
     width: 10%;
-    opacity: 0;
 }
 
 
