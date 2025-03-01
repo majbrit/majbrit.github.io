@@ -142,3 +142,94 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const pink = document.getElementById("deco-pink");
+    const lightblue = document.getElementById("deco-lightblue");
+    const darkblue = document.getElementById("deco-darkblue");
+
+    let hoverIntervalLightblue;
+    let hoverIntervalPink;
+    let hoverIntervalDarkblue;
+    const pinkColor = "#f8b1f3"
+    const lightblueColor = "#b9d1f8";
+    const darkblueColor = "#033070";
+
+    if(pink) {
+        pink.addEventListener("mouseover", (event) => {
+                var rect, r; 
+                var x, xm, xd; 
+                var y,y2; 
+            hoverIntervalPink = setInterval(() => {
+                rect = pink.getBoundingClientRect(); 
+                r = rect.width / 2;
+                xm = rect.left + r + window.scrollX;
+                x = Math.random() * rect.width + rect.left + window.scrollX;  
+                xd = x - xm;
+                y =  rect.top + (rect.height/2) + window.scrollY - Math.sqrt(Math.pow(r, 2) - Math.pow(xd, 2)) ;
+                createCircle(x, y, pinkColor);
+            }, 100); 
+        });
+
+        pink.addEventListener("mouseleave", () => {
+            clearInterval(hoverIntervalPink);
+        });
+    }
+
+    if(lightblue) {
+        lightblue.addEventListener("mouseover", (event) => {
+            hoverIntervalLightblue = setInterval(() => {
+                const rect = lightblue.getBoundingClientRect(); 
+                const x = Math.random() * rect.width + rect.left + window.scrollX;  
+                const y =  rect.top + rect.height / 2 + window.scrollY;
+                console.log("setinterval");
+                createCircle(x, y, lightblueColor);
+            }, 100); 
+        });
+        
+        lightblue.addEventListener("mouseleave", () => {
+            clearInterval(hoverIntervalLightblue);
+        });
+    }
+
+    if(darkblue) {
+        console.log("DARK");
+        darkblue.addEventListener("mouseover", (event) => {
+            console.log("DARK");
+            hoverIntervalDarkblue = setInterval(() => {
+                const rect = darkblue.getBoundingClientRect(); 
+                const x = Math.random() * rect.width + rect.left + window.scrollX;  
+                const y =  rect.top + rect.height / 2 + window.scrollY;
+                console.log("setinterval");
+                createCircle(x, y, darkblueColor);
+            }, 100); 
+        });
+
+        darkblue.addEventListener("mouseleave", () => {
+            clearInterval(hoverIntervalDarkblue, darkblueColor);
+        });
+    }
+    
+
+});
+
+function createCircle(x, y, color) {
+
+    console.log("create Circle");
+
+    const circle = document.createElement("div");
+    circle.classList.add("circle");
+    document.body.appendChild(circle);
+
+    const size = Math.random() * 10 + 2;
+    circle.style.width = `${size}px`;
+    circle.style.height = `${size}px`;
+    circle.style.left = `${x - size / 2}px`;
+    circle.style.top = `${y - size / 2}px`;
+    circle.style.backgroundColor = color;
+
+    setTimeout(() => {
+        circle.remove();
+    }, 1000);
+}

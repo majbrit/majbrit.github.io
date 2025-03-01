@@ -453,7 +453,27 @@ input:checked + .slider:before {
   animation: none !important;
 }
 
+.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: flyUp 8s ease-out forwards;
+  z-index: -3;
+}
 
+@keyframes flyUp {
+  0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translateY(-1000px) scale(0);
+      opacity: 0;
+  }
+}
 
 
 @media only screen and (max-width: 1024px) {
