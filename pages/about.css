@@ -63,6 +63,10 @@
     left: 45px;
     top: 13px;
 
+
+}
+
+#me-hover {
     pointer-events: auto;
 }
 

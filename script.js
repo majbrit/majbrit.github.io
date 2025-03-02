@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (coffee && me) {
         coffee.style.opacity = "0";
         coffee.style.display = "none";
-
         me.addEventListener("mouseover", () => {
             hoverTimer = setTimeout(() => {
                 coffee.style.display = "inline-block";
@@ -102,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
 
 
 
@@ -152,9 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let hoverIntervalLightblue;
     let hoverIntervalPink;
     let hoverIntervalDarkblue;
-    const pinkColor = "#f8b1f3"
-    const lightblueColor = "#b9d1f8";
-    const darkblueColor = "#033070";
 
     if(pink) {
         pink.addEventListener("mouseover", (event) => {
@@ -168,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 x = Math.random() * rect.width + rect.left + window.scrollX;  
                 xd = x - xm;
                 y =  rect.top + (rect.height/2) + window.scrollY - Math.sqrt(Math.pow(r, 2) - Math.pow(xd, 2)) ;
-                createCircle(x, y, pinkColor);
+                createCircle(x, y, window.getComputedStyle(pink).backgroundColor);
             }, 100); 
         });
 
@@ -183,8 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const rect = lightblue.getBoundingClientRect(); 
                 const x = Math.random() * rect.width + rect.left + window.scrollX;  
                 const y =  rect.top + rect.height / 2 + window.scrollY;
-                console.log("setinterval");
-                createCircle(x, y, lightblueColor);
+                createCircle(x, y, window.getComputedStyle(lightblue).backgroundColor);
             }, 100); 
         });
         
@@ -194,20 +190,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if(darkblue) {
-        console.log("DARK");
         darkblue.addEventListener("mouseover", (event) => {
-            console.log("DARK");
             hoverIntervalDarkblue = setInterval(() => {
                 const rect = darkblue.getBoundingClientRect(); 
                 const x = Math.random() * rect.width + rect.left + window.scrollX;  
                 const y =  rect.top + rect.height / 2 + window.scrollY;
-                console.log("setinterval");
-                createCircle(x, y, darkblueColor);
+                createCircle(x, y, window.getComputedStyle(darkblue).backgroundColor);
             }, 100); 
         });
 
         darkblue.addEventListener("mouseleave", () => {
-            clearInterval(hoverIntervalDarkblue, darkblueColor);
+            clearInterval(hoverIntervalDarkblue);
         });
     }
     
@@ -215,8 +208,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function createCircle(x, y, color) {
-
-    console.log("create Circle");
 
     const circle = document.createElement("div");
     circle.classList.add("circle");
