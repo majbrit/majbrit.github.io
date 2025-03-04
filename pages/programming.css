@@ -158,6 +158,11 @@
   }
 
 
+  #tryhackme {
+    border: none;
+    width: 100%;
+  }
+
 
 
 
@@ -166,6 +171,7 @@
     .programming-container {
         grid-template-columns: 1fr; 
     }
+
 }
 
 

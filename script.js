@@ -224,3 +224,4 @@ function createCircle(x, y, color) {
         circle.remove();
     }, 1000);
 }
+
