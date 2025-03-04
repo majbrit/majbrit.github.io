@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.programming-item img {
+.image {
     width: calc(100% - 20px);
     box-shadow: 1px 2px 4px var(--down);
     padding: 10px;
@@ -175,7 +175,7 @@ body.dark-mode .programming-item {
     box-shadow: 1px 2px 4px var(--dark-lightpink);
 }
 
-body.dark-mode .programming-item img {
+body.dark-mode .image  {
     box-shadow: 1px 2px 4px var(--dark-lightblue);
     background-color: var(--black);
 }
