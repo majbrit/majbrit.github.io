@@ -30,7 +30,7 @@ h3 {
     margin: 16px auto;
 }
 
-img {
+.design-item img {
     height: 200px;
     box-shadow: 1px 2px 4px var(--down);
 
@@ -46,7 +46,7 @@ img {
 
 @media only screen and (max-width: 1024px) {
 
-    img {
+    .design-item img {
         max-width: 90%;
         height: auto;
         width: auto;
@@ -78,7 +78,7 @@ body.dark-mode .design-item {
     box-shadow: 1px 2px 4px var(--dark-lightpink);
 }
 
-body.dark-mode img {
+body.dark-mode .design-item img {
     box-shadow: 1px 2px 4px var(--dark-lightblue);
     background-color: var(--black);
 }
