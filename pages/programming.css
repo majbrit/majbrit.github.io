@@ -176,9 +176,9 @@
 
 @media (max-width: 600px) {
   #tryhackme {
-        transform: scale(0.8); 
+    transform: scale(0.8); 
     transform-origin: 0 0; 
-    width: 300%; 
+    width: 120%; 
     height: 20%;
   }
 }
