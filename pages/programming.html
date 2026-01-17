@@ -45,46 +45,7 @@
             <h1 class="letters">Programmierung</h1>
             <div class="programming-container">
                 
-
-                <div class="programming-item">
-                    <div class="inner-item">
-                        <h3>Risky Trading – Game Design mit Unity</h3>
-                        <div class="image-container">
-                            <img class="image" src="../assets/programming/pflanzsystem.png" alt="">
-                            <img class="image small-image" src="../assets/programming/specialTea.png" alt="">
-                        </div>
-                        
-                        <div class="info">
-                            <span class="group-single">Gruppenprojekt</span>
-                            <br>
-                            <span class="tools">Unity</span>
-                            <span class="tools">C#</span>
-                        </div>
-                            <p>
-                                Dieses Projekt ist eine Erweiterung eines Shop-Simulators. 
-                                Als Grundlage diente das Unity Asset <a href="https://assetstore.unity.com/packages/templates/systems/store-simulator-supermarket-game-template-309463">Store Simulator - Supermarket Game Template</a>, dessen Code um zusätzliche Funktionen ergänzt wurde. 
-                                Die Erweiterungen umfassen Kundenfragen, individuelle Kundenkommentare beim Verlassen des Ladens, Interaktion mit Dealer und Polizei sowie ein Pflanzsystem.
-                            <p>
-                                Ein zentrales Element ist das Pflanzsystem, das es Spielenden ermöglicht, bis zu acht Töpfe gleichzeitig mit Hanfpflanzen zu bewirtschaften. 
-                                Samen können eingepflanzt, gegossen und geerntet werden. 
-                                Die Pflanzen reagieren auf Pflege, durchlaufen mehrere Wachstumsphasen und liefern Blüten, die an Kundschaft im Laden verkauft werden können. 
-                                Vernachlässigung führt zum Absterben der Pflanzen und beeinflusst den Spielfortschritt unmittelbar.
-                            </p>
-                            <p>
-                                Über einen Dealer können Spielende illegale Samen erwerben, während Polizeipatrouillen die Umgebung überwachen, illegale Aktivitäten erkennen und mit Strafen reagieren. 
-                                Dadurch entsteht eine dynamische Risikoabwägung zwischen schnellem Gewinn und der Gefahr, erwischt zu werden.   
-                            </p>
-                            <p>
-                                In den Screenshots sind fremde Assets zu sehen: Einige 3D-Modelle stammen aus dem Unity Asset <a href="https://assetstore.unity.com/packages/3d/vegetation/plants/stylized-potted-plants-2900">‚Stylized Potted Plants‘ von SandoraKa</a>, außerdem wurde das 3D-Modell <a href="https://creazilla.com/media/3d-model/63413/hemp-weed-cannabis-sativa">‚Hemp Weed Cannabis Sativa‘ von Creazilla</a> verwendet.
-                            </p>
-
-                        <div class="links">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="programming-item">
+                               <div class="programming-item">
                     <div class="inner-item">
                         <h3>VR-Spiel angelehnt an Ubongo 3D</h3>
                         <div class="image-container">
@@ -125,28 +86,89 @@
                 </div>
 
                 <div class="programming-item">
-                    <div class="inner-item">
-                        <h3>Escape-Box</h3>
+
+                        <h3>Game Programming Pattern</h3>
                         <div class="image-container">
-                            <img class="image" src="../assets/programming/Labyrinth.jpg" alt="Silbernes Labyrinth mit haptischen Symbolen">
-                            <img class="image small-image" src="../assets/programming/sensor.jpg" alt="Abstandssensor">
+                            <img class="image"  src="../assets/programming/gpp.gif" alt="Pong mit Portalen">
+                            <img class="image small-image" src="../assets/programming/pongMenu.png" alt="Pong Main Menu">
+                        </div>
+                        
+                        
+                        <div class="info">
+                            <span class="group-single">Gruppenprojekt</span>
+                            <br>
+                            <span class="tools">C#</span>
+                            <span class="tools">.NET</span>
+                        </div>
+                            <p>Ziel dieses Projekts war es, Spiele ohne Game Engine zu programmieren, um die grundlegenden Patterns und Prinzipien der Game-Programmierung praktisch zu verstehen. Während des Projekts wurde die Codebasis schrittweise erweitert, sodass insgesamt drei unterschiedliche Spiele entstanden, die aufeinander aufbauen:</p>
+
+                            <ol>
+                                <li>
+                                <strong>Pong</strong>: Pongspiel mit drei Leveln
+                                <ul>
+                                    <li><strong>Level 1</strong>: Klassisches Pong für zwei Spieler</li>
+                                    <li><strong>Level 2</strong>: Einführung von zwei Portalen (oben und unten), die den Ball beeinflussen</li>
+                                    <li><strong>Level 3</strong>: Der zweite Spieler wird durch eine KI ersetzt, die den Gegner steuert</li>
+                                </ul>
+                                </li>
+                                <li>
+                                <strong>Shoot ’em up</strong>: Der Spieler steuert ein Raumschiff und muss auftauchende Gegner abschießen
+                                </li>
+                                <li>
+                                <strong>Tile-basierter Plattformer</strong>: Klassisches Plattformspiel mit drei Leveln, das Bewegung, Kollisionserkennung und Level-Logik implementiert
+                                </li>
+                            </ol>
+
+                            <p>Das Projekt half, Game-Design-Grundlagen, Strukturierung von Code und die Anwendung von Design-Patterns in der Praxis zu erlernen.</p>
+
+                        <div class="links">
+                            <div class="spinning">
+                                <span class="link-item"><a href="https://github.com/amorokdeh/gpp2022_yalla">Code
+                                    <!--bootstrap icon https://icons.getbootstrap.com/icons/github/-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                    </svg>
+                                </a></span>
+                            </div>
+                        </div>
+          
+                </div>
+
+                <div class="programming-item">
+                    <div class="inner-item">
+                        <h3>Risky Trading – Game Design mit Unity</h3>
+                        <div class="image-container">
+                            <img class="image" src="../assets/programming/pflanzsystem.png" alt="">
+                            <img class="image small-image" src="../assets/programming/specialTea.png" alt="">
                         </div>
                         
                         <div class="info">
                             <span class="group-single">Gruppenprojekt</span>
                             <br>
-                            <span class="tools">IoT</span>
-                            <span class="tools">C++</span>
+                            <span class="tools">Unity</span>
+                            <span class="tools">C#</span>
                         </div>
-                        <p>
-                            In diesem Projekt ging es darum, eine Escape-Box für Blinde und Sehbehinderte zu entwickln. 
-                            Es ist in Kooperation mit der <a href="https://escape-academy.de/">Escape Academy</a> entstanden.
-                            In dieser Escape-Box geht es darum, verschiedene Rätsel nacheinander zu lösen. 
-                            Es gibt akustische Anweisungen an die Spieler und Input-Geräte registrieren, ob die Spieler die Rätsel korrekt lösen.
-                        </p>
-                        <p>
-                            Im Spiel geht es um eine Marsmission. Mein Beitrag war die Konzeption und Umsetzung des letzten Spielabschnitts. In diesem müssen die Spielenden aktiv mit der Box interagieren, um die Mission abzuschließen. Für meinen Spielabschnitt habe ich die Story geschrieben, passende Rätsel entworfen und den Code implementiert sowie die physischen Elemente gebaut. Für eine barrierefreie Umsetzung für Blinde und Sehbehinderte habe ich neben Audio auch viel Haptik genutzt, darunter Markierungen, Braille und erhabene Schrift.
-                        </p>
+                            <p>
+                                Dieses Projekt ist eine Erweiterung eines Shop-Simulators. 
+                                Als Grundlage diente das Unity Asset <a href="https://assetstore.unity.com/packages/templates/systems/store-simulator-supermarket-game-template-309463">Store Simulator - Supermarket Game Template</a>, dessen Code um zusätzliche Funktionen ergänzt wurde. 
+                                Die Erweiterungen umfassen Kundenfragen, individuelle Kundenkommentare beim Verlassen des Ladens, Interaktion mit Dealer und Polizei sowie ein Pflanzsystem.
+                            <p>
+                                Ein zentrales Element ist das Pflanzsystem, das es Spielenden ermöglicht, bis zu acht Töpfe gleichzeitig mit Hanfpflanzen zu bewirtschaften. 
+                                Samen können eingepflanzt, gegossen und geerntet werden. 
+                                Die Pflanzen reagieren auf Pflege, durchlaufen mehrere Wachstumsphasen und liefern Blüten, die an Kundschaft im Laden verkauft werden können. 
+                                Vernachlässigung führt zum Absterben der Pflanzen und beeinflusst den Spielfortschritt unmittelbar.
+                            </p>
+                            <p>
+                                Über einen Dealer können Spielende illegale Samen erwerben, während Polizeipatrouillen die Umgebung überwachen, illegale Aktivitäten erkennen und mit Strafen reagieren. 
+                                Dadurch entsteht eine dynamische Risikoabwägung zwischen schnellem Gewinn und der Gefahr, erwischt zu werden.   
+                            </p>
+                            <p>
+                                In den Screenshots sind fremde Assets zu sehen: Einige 3D-Modelle stammen aus dem Unity Asset <a href="https://assetstore.unity.com/packages/3d/vegetation/plants/stylized-potted-plants-2900">‚Stylized Potted Plants‘ von SandoraKa</a>, außerdem wurde das 3D-Modell <a href="https://creazilla.com/media/3d-model/63413/hemp-weed-cannabis-sativa">‚Hemp Weed Cannabis Sativa‘ von Creazilla</a> verwendet.
+                            </p>
+
+                        <div class="links">
+
+                        </div>
                     </div>
                 </div>
 
@@ -197,6 +219,170 @@
                                 </a></span>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="programming-item">
+                    <div class="inner-item">
+                        <h3>Inverse Kinematik: Simulation einer menschlichen Gehbewegung</h3>
+                        <div class="image-container">
+                            <img class="image" src="../assets/programming/bein5.jpg" alt="Skizzen zur Winkelberechnung des Beins">
+                            <img class="image small-image" src="../assets/programming/gehenQ.png" alt="Simulation der Gehbewegung in MATLAB">
+                        </div>
+                        
+                        <div class="info">
+                            <span class="group-single">Gruppenprojekt</span>
+                            <br>
+                            <span class="tools">MATLAB</span>
+                        </div>
+                        <p>
+                            Das Projekt ist zwar schon etwas älter (2. Semester des Bachelorstudiums), ich habe es trotzdem in mein Portfolio aufgenommen, weil ich es spannend finde, mathematische Konzepte zu nutzen, um etwas Grafisches darzustellen. Die Möglichkeit, ein physikalisches Verhalten visuell und interaktiv zu simulieren, hat mich besonders interessiert.
+                        </p>
+                        <p>
+                            In diesem Projekt zur inversen Kinematik wurde eine Simulation der menschlichen Gehbewegung entwickelt, die auf einem vereinfachten humanoiden Prototyp basiert. Zwei mathematische Verfahren, die Jacobi-Matrix und das Newton-Raphson-Verfahren, wurden eingesetzt, um die benötigten Gelenkwinkel für vorgegebene Fußpositionen zu berechnen. Die Armbewegungen wurden mittels Vorwärtskinematik simuliert. Es wurden unterschiedliche Bewegungsmuster für Gehen und Laufen berücksichtigt. Besonders Augenmerk galt der realistischen Nachbildung der Hüft-, Arm- und Beinbewegungen, einschließlich der physischen Einschränkungen wie das Verhindern eines rückwärts knickenden Knies. Die gesamte Umsetzung erfolgte ohne externe MatLab-Toolboxen, um das mathematische Verständnis zu vertiefen und alle Berechnungen selbstständig zu programmieren.
+                        </p>
+ 
+                       
+                    </div>
+                </div>
+
+                <div class="programming-item">
+                    <div class="inner-item">
+                        <h3>3D Modelling Software – Computer Graphics</h3>
+                        <div class="image-container">
+                            <img class="image"  src="../assets/programming/computerGraphics.png" alt="Benutzeroberfläche der 3D-Modellierungssoftware">
+                            <img class="image small-image" src="../assets/programming/computerGraphicsGif.gif" alt="3D-Drucker druckt ein Objekt">
+                        </div>
+                        
+                        <div class="info">
+                            <span class="group-single">Gruppenprojekt</span>
+                            <br>
+                            <span class="tools">Python 3</span>
+                            <span class="tools">PySide6</span>
+                            <span class="tools">Qt Designer</span>
+                        </div>
+                        <p>Im Projekt wurde eine 3D-Modellierungssoftware mit einer grafischen Benutzeroberfläche (GUI) in PySide6 entwickelt, die den Import, die Ansicht und die Bearbeitung von .OBJ-Dateien ermöglicht. Nutzer können über Buttons und Slider die 3D-Objekte skalieren und verschiedene Werkzeuge anwenden. 
+                            Dafür wurden zwei Subdivision-Algorithmen, Loop-Subdivision und lineare Subdivision, implementiert, mit denen die importierten Objekte geglättet oder verfeinert werden. Die GUI wurde visuell mit Qt Designer gestaltet und in Python umgesetzt. Die bearbeiteten 3D-Objekte können gespeichert werden. 
+                            Im Rahmen des Projekts wurden die bearbeiteten 3D-Objekte im 3D-Drucker ausgedruckt.
+                        </p>
+                        <div class="links">
+                            <div class="spinning">
+                                <span class="link-item"><a href="https://github.com/reederward1285/Computer_Graphics_SoSe_2021">Code
+                                    <!--bootstrap icon https://icons.getbootstrap.com/icons/github/-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                    </svg>
+                                </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="programming-item">
+                    <div class="inner-item">
+                        <h3>Escape-Box</h3>
+                        <div class="image-container">
+                            <img class="image" src="../assets/programming/Labyrinth.jpg" alt="Silbernes Labyrinth mit haptischen Symbolen">
+                            <img class="image small-image" src="../assets/programming/sensor.jpg" alt="Abstandssensor">
+                        </div>
+                        
+                        <div class="info">
+                            <span class="group-single">Gruppenprojekt</span>
+                            <br>
+                            <span class="tools">IoT</span>
+                            <span class="tools">C++</span>
+                        </div>
+                        <p>
+                            In diesem Projekt ging es darum, eine Escape-Box für Blinde und Sehbehinderte zu entwickln. 
+                            Es ist in Kooperation mit der <a href="https://escape-academy.de/">Escape Academy</a> entstanden.
+                            In dieser Escape-Box geht es darum, verschiedene Rätsel nacheinander zu lösen. 
+                            Es gibt akustische Anweisungen an die Spieler und Input-Geräte registrieren, ob die Spieler die Rätsel korrekt lösen.
+                        </p>
+                        <p>
+                            Im Spiel geht es um eine Marsmission. Mein Beitrag war die Konzeption und Umsetzung des letzten Spielabschnitts. In diesem müssen die Spielenden aktiv mit der Box interagieren, um die Mission abzuschließen. Für meinen Spielabschnitt habe ich die Story geschrieben, passende Rätsel entworfen und den Code implementiert sowie die physischen Elemente gebaut. Für eine barrierefreie Umsetzung für Blinde und Sehbehinderte habe ich neben Audio auch viel Haptik genutzt, darunter Markierungen, Braille und erhabene Schrift.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="programming-item">
+                    <div class="inner-item">
+                        <h3>Musik-CAPTCHA</h3>
+                        <div class="image-container">
+                            <img class="image"  src="../assets/programming/audioCaptcha.png" alt="Benutzeroberfläche des Musik-CAPTCHAs">
+                            <img class="image small-image" src="../assets/programming/audioCaptchaKlein.png" alt="Alternative der Player-Buttons">
+                        </div>
+                        
+                        <div class="info">
+                            <span class="group-single">Einzelprojekt</span>
+                            <br>
+                            <span class="tools">HTML</span>
+                            <span class="tools">CSS</span>
+                            <span class="tools">TypeScript</span>
+                            <span class="tools">Angular</span>
+                        </div>
+                        <p>
+                            Im Rahmen meiner Bachelorarbeit habe ich ein neuartiges Audio-CAPTCHA, welches auf Musik basiert, speziell für blinde und sehbehinderte Nutzer entwickelt. Es basiert auf kurzen Ausschnitten gemeinfreier Musikstücke, bei denen Nutzer entscheiden müssen, ob es sich um Varianten desselben Stücks handelt. Das CAPTCHA umfasst drei Aufgaben und gilt als gelöst, wenn alle korrekt beantwortet werden. Die Audiowiedergabe kann per Tastenkombinationen und individuell anpassbaren Player-Buttons gesteuert werden. 
+                        </p>
+                        <p>
+                            Das Musik-CAPTCHA wurde als barrierefreie Webanwendung mit Frontend und Backend realisiert. Zusätzlich wurde eine Beispielwebanwendung erstellt, in der das Musik-CAPTCHA über ein iFrame eingebunden ist. Bei der Entwicklung wurden die Richtlinien der Web Content Accessibility Guidelines (WCAG) berücksichtigt. In einer Evaluation wurde das Musik-CAPTCHA mit Googles reCAPTCHA hinsichtlich Benutzerfreundlichkeit, Barrierefreiheit und Sicherheit verglichen. Die Ergebnisse zeigten eine höhere Barrierefreiheit und bessere Nutzerwahrnehmung bei ähnlicher Effizienz und Fehlertoleranz. Zur statistischen Auswertung wurde der Mann-Whitney-U-Test eingesetzt. Sicherheitsanalysen belegten einen hohen Schutz gegenüber automatisierten Angriffen, jedoch eine gewisse Anfälligkeit gegenüber Zufallsantworten.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="programming-item">
+                    <div class="inner-item">
+                        <h3>Skillstraining</h3>
+                        <div class="image-container">
+                            <img class="image"  src="../assets/programming/Skillstraining.png" alt="Die Seite des Buchs in der Skillstraining-Benutzeroberfläche">
+                            <img class="image small-image" src="../assets/programming/SkillstrainingKlein.png" alt="Notfallkoffer">
+                        </div>
+                        
+                        <div class="info">
+                            <span class="group-single">Einzelprojekt</span>
+                            <br>
+                            <span class="tools">HTML</span>
+                            <span class="tools">CSS</span>
+                            <span class="tools">TypeScript</span>
+                            <span class="tools">Angular</span>
+                        </div>
+                        <p>
+                            Im Rahmen dieses Projekts wurde ein Prototyp zur Verbesserung der Usability der Software „Skillstraining_2.0“ entwickelt, die Menschen mit Borderline-Störung beim Erlernen und Anwenden von Skills aus der Dialektisch-Behavioralen Therapie unterstützt. Der Fokus lag auf der Optimierung des sogenannten Notfallkoffers, einem zentralen Element der Anwendung, das gespeicherte Inhalte für akute Belastungssituationen bereithält. 
+                        </p> 
+                        <p>
+                            Durch Nutzerfeedback und einen Think-Aloud-Test konnten konkrete Probleme wie unklare Icons und eine umständliche Navigation identifiziert und durch neue Funktionen und ein überarbeitetes Design behoben werden. Der Prototyp wurde mit Angular programmiert und ermöglichte unter anderem das intuitive Speichern, Löschen und Wiederfinden wichtiger Inhalte. Ein abschließender Vergleichstest mit sechs Testpersonen zeigte, dass der neue Prototyp in Bezug auf Bedienzeit und Benutzerfreundlichkeit besser abschnitt als das Original.
+                        </p>
+                        <div class="links">
+                            <div class="spinning">
+                                <span class="link-item"><a href="https://github.com/majbrit/Skillstraining">Code
+                                    <!--bootstrap icon https://icons.getbootstrap.com/icons/github/-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                    </svg>
+                                </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="programming-item">
+                    <div class="inner-item">
+                        <h3>TryHackMe</h3>
+                        <div class="image-container">
+                            <img class="image"  src="../assets/programming/try23.png" alt="Badges von try hack me">
+                            <img class="image small-image" src="../assets/programming/try11.png" alt="Skills Matrix von try hack me">
+                        </div>
+                        
+                        <div class="info">
+                            <span class="group-single">Einzelprojekt</span>
+                            <br>
+                            <span class="tools">Security</span>
+                            <span class="tools">Linux</span>
+                            <span class="tools">Web</span>
+                        </div>
+                        <p>
+                            In meiner Freizeit habe ich praxisorientierte Lernräume und Challenges auf der Plattform <a href="https://tryhackme.com/">TryHackMe</a> bearbeitet, um mein Wissen im Bereich IT-Sicherheit zu vertiefen. Dabei konnte ich Grundlagen der offensiven und defensiven Sicherheit kennenlernen und an realistischen Szenarien üben. Besonders gefallen hat mir mein Wissen über reguläre Ausdrücke zu vertiefen.
+                        </p>
+                            <iframe   title="Try Hack Me Badges" id="tryhackme" src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4245899"></iframe>
                     </div>
                 </div>
 
@@ -268,6 +454,8 @@
                         </div>
                     </div>
                 </div>
+
+                
 <!--
                 <div class="programming-item">
                     <div class="inner-item">
@@ -307,193 +495,6 @@
                     </div>
                 </div>
 -->
-                <div class="programming-item">
-                    <div class="inner-item">
-                        <h3>Musik-CAPTCHA</h3>
-                        <div class="image-container">
-                            <img class="image"  src="../assets/programming/audioCaptcha.png" alt="Benutzeroberfläche des Musik-CAPTCHAs">
-                            <img class="image small-image" src="../assets/programming/audioCaptchaKlein.png" alt="Alternative der Player-Buttons">
-                        </div>
-                        
-                        <div class="info">
-                            <span class="group-single">Einzelprojekt</span>
-                            <br>
-                            <span class="tools">HTML</span>
-                            <span class="tools">CSS</span>
-                            <span class="tools">TypeScript</span>
-                            <span class="tools">Angular</span>
-                        </div>
-                        <p>
-                            Im Rahmen meiner Bachelorarbeit habe ich ein neuartiges Audio-CAPTCHA, welches auf Musik basiert, speziell für blinde und sehbehinderte Nutzer entwickelt. Es basiert auf kurzen Ausschnitten gemeinfreier Musikstücke, bei denen Nutzer entscheiden müssen, ob es sich um Varianten desselben Stücks handelt. Das CAPTCHA umfasst drei Aufgaben und gilt als gelöst, wenn alle korrekt beantwortet werden. Die Audiowiedergabe kann per Tastenkombinationen und individuell anpassbaren Player-Buttons gesteuert werden. 
-                        </p>
-                        <p>
-                            Das Musik-CAPTCHA wurde als barrierefreie Webanwendung mit Frontend und Backend realisiert. Zusätzlich wurde eine Beispielwebanwendung erstellt, in der das Musik-CAPTCHA über ein iFrame eingebunden ist. Bei der Entwicklung wurden die Richtlinien der Web Content Accessibility Guidelines (WCAG) berücksichtigt. In einer Evaluation wurde das Musik-CAPTCHA mit Googles reCAPTCHA hinsichtlich Benutzerfreundlichkeit, Barrierefreiheit und Sicherheit verglichen. Die Ergebnisse zeigten eine höhere Barrierefreiheit und bessere Nutzerwahrnehmung bei ähnlicher Effizienz und Fehlertoleranz. Zur statistischen Auswertung wurde der Mann-Whitney-U-Test eingesetzt. Sicherheitsanalysen belegten einen hohen Schutz gegenüber automatisierten Angriffen, jedoch eine gewisse Anfälligkeit gegenüber Zufallsantworten.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="programming-item">
-                    <div class="inner-item">
-                        <h3>Skillstraining</h3>
-                        <div class="image-container">
-                            <img class="image"  src="../assets/programming/Skillstraining.png" alt="Die Seite des Buchs in der Skillstraining-Benutzeroberfläche">
-                            <img class="image small-image" src="../assets/programming/SkillstrainingKlein.png" alt="Notfallkoffer">
-                        </div>
-                        
-                        <div class="info">
-                            <span class="group-single">Einzelprojekt</span>
-                            <br>
-                            <span class="tools">HTML</span>
-                            <span class="tools">CSS</span>
-                            <span class="tools">TypeScript</span>
-                            <span class="tools">Angular</span>
-                        </div>
-                        <p>
-                            Im Rahmen dieses Projekts wurde ein Prototyp zur Verbesserung der Usability der Software „Skillstraining_2.0“ entwickelt, die Menschen mit Borderline-Störung beim Erlernen und Anwenden von Skills aus der Dialektisch-Behavioralen Therapie unterstützt. Der Fokus lag auf der Optimierung des sogenannten Notfallkoffers, einem zentralen Element der Anwendung, das gespeicherte Inhalte für akute Belastungssituationen bereithält. 
-                        </p> 
-                        <p>
-                            Durch Nutzerfeedback und einen Think-Aloud-Test konnten konkrete Probleme wie unklare Icons und eine umständliche Navigation identifiziert und durch neue Funktionen und ein überarbeitetes Design behoben werden. Der Prototyp wurde mit Angular programmiert und ermöglichte unter anderem das intuitive Speichern, Löschen und Wiederfinden wichtiger Inhalte. Ein abschließender Vergleichstest mit sechs Testpersonen zeigte, dass der neue Prototyp in Bezug auf Bedienzeit und Benutzerfreundlichkeit besser abschnitt als das Original.
-                        </p>
-                        <div class="links">
-                            <div class="spinning">
-                                <span class="link-item"><a href="https://github.com/majbrit/Skillstraining">Code
-                                    <!--bootstrap icon https://icons.getbootstrap.com/icons/github/-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                    </svg>
-                                </a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="programming-item">
-
-                        <h3>Game Programming Pattern</h3>
-                        <div class="image-container">
-                            <img class="image"  src="../assets/programming/gpp.gif" alt="Pong mit Portalen">
-                            <img class="image small-image" src="../assets/programming/pongMenu.png" alt="Pong Main Menu">
-                        </div>
-                        
-                        
-                        <div class="info">
-                            <span class="group-single">Gruppenprojekt</span>
-                            <br>
-                            <span class="tools">C#</span>
-                            <span class="tools">.NET</span>
-                        </div>
-                            <p>Ziel dieses Projekts war es, Spiele ohne Game Engine zu programmieren, um die grundlegenden Patterns und Prinzipien der Game-Programmierung praktisch zu verstehen. Während des Projekts wurde die Codebasis schrittweise erweitert, sodass insgesamt drei unterschiedliche Spiele entstanden, die aufeinander aufbauen:</p>
-
-                            <ol>
-                                <li>
-                                <strong>Pong</strong>: Pongspiel mit drei Leveln
-                                <ul>
-                                    <li><strong>Level 1</strong>: Klassisches Pong für zwei Spieler</li>
-                                    <li><strong>Level 2</strong>: Einführung von zwei Portalen (oben und unten), die den Ball beeinflussen</li>
-                                    <li><strong>Level 3</strong>: Der zweite Spieler wird durch eine KI ersetzt, die den Gegner steuert</li>
-                                </ul>
-                                </li>
-                                <li>
-                                <strong>Shoot ’em up</strong>: Der Spieler steuert ein Raumschiff und muss auftauchende Gegner abschießen
-                                </li>
-                                <li>
-                                <strong>Tile-basierter Plattformer</strong>: Klassisches Plattformspiel mit drei Leveln, das Bewegung, Kollisionserkennung und Level-Logik implementiert
-                                </li>
-                            </ol>
-
-                            <p>Das Projekt half, Game-Design-Grundlagen, Strukturierung von Code und die Anwendung von Design-Patterns in der Praxis zu erlernen.</p>
-
-                        <div class="links">
-                            <div class="spinning">
-                                <span class="link-item"><a href="https://github.com/amorokdeh/gpp2022_yalla">Code
-                                    <!--bootstrap icon https://icons.getbootstrap.com/icons/github/-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                    </svg>
-                                </a></span>
-                            </div>
-                        </div>
-          
-                </div>
-
-                <div class="programming-item">
-
-                        <h3>3D Modelling Software – Computer Graphics</h3>
-                        <div class="image-container">
-                            <img class="image"  src="../assets/programming/computerGraphics.png" alt="Benutzeroberfläche der 3D-Modellierungssoftware">
-                            <img class="image small-image" src="../assets/programming/computerGraphicsGif.gif" alt="3D-Drucker druckt ein Objekt">
-                        </div>
-                        
-                        <div class="info">
-                            <span class="group-single">Gruppenprojekt</span>
-                            <br>
-                            <span class="tools">Python 3</span>
-                            <span class="tools">PySide6</span>
-                            <span class="tools">Qt Designer</span>
-                        </div>
-                        <p>Im Projekt wurde eine 3D-Modellierungssoftware mit einer grafischen Benutzeroberfläche (GUI) in PySide6 entwickelt, die den Import, die Ansicht und die Bearbeitung von .OBJ-Dateien ermöglicht. Nutzer können über Buttons und Slider die 3D-Objekte skalieren und verschiedene Werkzeuge anwenden. 
-                            Dafür wurden zwei Subdivision-Algorithmen, Loop-Subdivision und lineare Subdivision, implementiert, mit denen die importierten Objekte geglättet oder verfeinert werden. Die GUI wurde visuell mit Qt Designer gestaltet und in Python umgesetzt. Die bearbeiteten 3D-Objekte können gespeichert werden. 
-                            Im Rahmen des Projekts wurden die bearbeiteten 3D-Objekte im 3D-Drucker ausgedruckt.
-                        </p>
-                        <div class="links">
-                            <div class="spinning">
-                                <span class="link-item"><a href="https://github.com/reederward1285/Computer_Graphics_SoSe_2021">Code
-                                    <!--bootstrap icon https://icons.getbootstrap.com/icons/github/-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                    </svg>
-                                </a></span>
-                            </div>
-                        </div>
-                </div>
-
-                
-                
-                <div class="programming-item">
-
-                    <h3>TryHackMe</h3>
-                    <div class="image-container">
-                        <img class="image"  src="../assets/programming/try23.png" alt="Badges von try hack me">
-                        <img class="image small-image" src="../assets/programming/try11.png" alt="Skills Matrix von try hack me">
-                    </div>
-                    
-                    <div class="info">
-                        <span class="group-single">Einzelprojekt</span>
-                        <br>
-                        <span class="tools">Security</span>
-                        <span class="tools">Linux</span>
-                        <span class="tools">Web</span>
-                    </div>
-                    <p>
-                        In meiner Freizeit habe ich praxisorientierte Lernräume und Challenges auf der Plattform <a href="https://tryhackme.com/">TryHackMe</a> bearbeitet, um mein Wissen im Bereich IT-Sicherheit zu vertiefen. Dabei konnte ich Grundlagen der offensiven und defensiven Sicherheit kennenlernen und an realistischen Szenarien üben. Besonders gefallen hat mir mein Wissen über reguläre Ausdrücke zu vertiefen.
-                    </p>
-                        <iframe   title="Try Hack Me Badges" id="tryhackme" src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4245899"></iframe>
-                     </div>
-
-                <div class="programming-item">
-                    <div class="inner-item">
-                        <h3>Inverse Kinematik: Simulation einer menschlichen Gehbewegung</h3>
-                        <div class="image-container">
-                            <img class="image" src="../assets/programming/bein5.jpg" alt="Skizzen zur Winkelberechnung des Beins">
-                            <img class="image small-image" src="../assets/programming/gehenQ.png" alt="Simulation der Gehbewegung in MATLAB">
-                        </div>
-                        
-                        <div class="info">
-                            <span class="group-single">Gruppenprojekt</span>
-                            <br>
-                            <span class="tools">MATLAB</span>
-                        </div>
-                        <p>
-                            Das Projekt ist zwar schon etwas älter (2. Semester des Bachelorstudiums), ich habe es trotzdem in mein Portfolio aufgenommen, weil ich es spannend finde, mathematische Konzepte zu nutzen, um etwas Grafisches darzustellen. Die Möglichkeit, ein physikalisches Verhalten visuell und interaktiv zu simulieren, hat mich besonders interessiert.
-                        </p>
-                        <p>
-                            In diesem Projekt zur inversen Kinematik wurde eine Simulation der menschlichen Gehbewegung entwickelt, die auf einem vereinfachten humanoiden Prototyp basiert. Zwei mathematische Verfahren, die Jacobi-Matrix und das Newton-Raphson-Verfahren, wurden eingesetzt, um die benötigten Gelenkwinkel für vorgegebene Fußpositionen zu berechnen. Die Armbewegungen wurden mittels Vorwärtskinematik simuliert. Es wurden unterschiedliche Bewegungsmuster für Gehen und Laufen berücksichtigt. Besonders Augenmerk galt der realistischen Nachbildung der Hüft-, Arm- und Beinbewegungen, einschließlich der physischen Einschränkungen wie das Verhindern eines rückwärts knickenden Knies. Die gesamte Umsetzung erfolgte ohne externe MatLab-Toolboxen, um das mathematische Verständnis zu vertiefen und alle Berechnungen selbstständig zu programmieren.
-                        </p>
- 
-                       
-                    </div>
-                </div>
 
             </div>
 
