@@ -90,15 +90,15 @@
 
   --lightpink: #f8b1f3;
   --lightblue: #b9d1f8;
-  --dark-lightpink: #f737f5;
-  --dark-lightblue: #00ddf7;
+  --dark-lightpink: #ff5cf3;
+  --dark-lightblue: #3facff;
   --darkblue: #033070;
   --dark-white: #fefeff;
 
   --lightblue-a: hsla(217, 82%, 85%, 0.3);
   --lightpink-a: hsla(304, 84%, 83%, 0.3);
-  --dark-lightpink-a: hsla(301, 92%, 59%, 0.3);
-  --dark-lightblue-a: hsla(186, 100%, 48%, 0.3);
+  --dark-lightpink-a: hsla(304, 100%, 68%, 0.3); 
+  --dark-lightblue-a: hsla(206, 100%, 62%, 0.3);
 
 
 }
