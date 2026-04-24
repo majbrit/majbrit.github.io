@@ -1,0 +1,6 @@
+title: Majbrit Website
+description: Portfolio website for Majbrit
+url: "https://majbrit.github.io"
+
+plugins:
+  - jekyll-sitemap
