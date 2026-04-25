@@ -225,3 +225,23 @@ function createCircle(x, y, color) {
     }, 1000);
 }
 
+
+function openVideo(src) {
+  const modal = document.getElementById("videoModal");
+  const video = document.getElementById("modalVideo");
+
+  video.src = src;
+  video.play();
+
+  modal.style.display = "flex";
+}
+
+function closeVideo() {
+  const modal = document.getElementById("videoModal");
+  const video = document.getElementById("modalVideo");
+
+  video.pause();
+  video.currentTime = 0;
+
+  modal.style.display = "none";
+}
