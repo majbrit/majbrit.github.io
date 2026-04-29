@@ -2,6 +2,13 @@ p{
     padding-top: 8px;
 }
 
+h2 {
+    margin-bottom: 0px;
+}
+.section-description {
+    margin-top: 0px;
+}
+
 .programming-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -167,7 +174,6 @@ p{
     width: 100%;
     padding-top: 16px;
   }
-
 
 
 
