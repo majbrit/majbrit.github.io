@@ -20,15 +20,18 @@ h3 {
 
   text-align: center;
 
-  
-
-
 }
 
 .design-item p {
     max-width: 30vw;
     margin: 16px auto;
 }
+
+.design-item .wide {
+    max-width: 70vw;
+}
+
+
 
 .design-item img {
     height: 200px;
@@ -82,3 +85,4 @@ body.dark-mode .design-item img {
     box-shadow: 1px 2px 4px var(--dark-lightblue);
     background-color: var(--black);
 }
+
