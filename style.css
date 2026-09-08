@@ -658,7 +658,7 @@ input:checked + .slider:before {
 body.dark-mode {
   background-color: var(--dark-background);
   color: var(--grey);
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 0 8px rgb(0, 0, 0);
 
   background-image: url("./assets/blueBlurDark.svg"), url("./assets/pinkBlurDark.svg"), url("./assets/blueBlurDark.svg"), url("./assets/pinkBlurDark.svg");
   background-repeat: repeat-y, repeat-y, repeat-y, repeat-y;
@@ -669,7 +669,6 @@ body.dark-mode {
 body.dark-mode .navbar {
   background-color: var(--dark-paper);
   box-shadow: 1px 2px 2px var(--dark-lightpink), -1px -2px 2px var(--dark-lightblue), inset 0.5px 0.5px 2px var(--dark-lightblue), inset -0.5px -0.5px 2px var(--dark-lightpink);
-
 }
  
 body.dark-mode .foot {
@@ -779,14 +778,13 @@ body.dark-mode .slider-img {
 @media only screen and (max-width: 1024px) {
 
   body {
-      background-size: 600px, 450px, 600px, 450px;
-        background-position: -220px -320px, -100px 500px, calc(100% + 220px) calc(100% + 320px), calc(100% + 100px) 100%;
-
+        background-size: 600px 900px, 450px 600px, 600px 800px, 450px 500px;
+        background-position: -220px -240px, -100px 20px, calc(100% + 220px) calc(100% + 220px), calc(100% + 100px) calc(100% - 100px);
   }
 
   body.dark-mode {
-        background-size: 600px, 450px, 600px, 450px;
-        background-position: -220px -320px, -100px 500px, calc(100% + 220px) calc(100% + 320px), calc(100% + 100px) 100%;
+        background-size: 600px 900px, 450px 600px, 600px 800px, 450px 500px;
+        background-position: -220px -240px, -100px 20px, calc(100% + 220px) calc(100% + 120px), calc(100% + 100px) calc(100% - 100px);
   }
 
   .content {
@@ -843,15 +841,14 @@ body.dark-mode .slider-img {
 }
 
 @media (max-width: 500px) {
-  body {
-        background-size: 500px, 350px, 450px, 400px;
-        background-position: -220px -320px, -100px 500px, calc(100% + 220px) calc(100% + 320px), calc(100% + 100px) 100%;
- 
+  body.dark-mode {
+    background-size: 450px 750px, 350px 550px, 450px 780px, 350px 510px;
+    background-position: -220px -120px, -100px 100px, calc(100% + 220px) calc(100% + 200px), calc(100% + 100px) calc(100% - 80px);
   }
 
   body.dark-mode {
-        background-size: 500px, 350px, 450px, 400px;
-        background-position: -220px -320px, -100px 500px, calc(100% + 220px) calc(100% + 320px), calc(100% + 100px) 100%;
+    background-size: 450px 750px, 350px 550px, 450px 780px, 350px 510px;
+    background-position: -220px -120px, -100px 100px, calc(100% + 220px) calc(100% + 200px), calc(100% + 100px) calc(100% - 80px);
   }
 
 }
