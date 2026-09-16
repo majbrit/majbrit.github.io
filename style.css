@@ -586,6 +586,7 @@ input:checked + .slider:before {
   border-radius: 5px;
   background-color: var(--darkblue);
   color: var(--white);
+  text-shadow: none;
 }
 
 .small {
@@ -626,7 +627,7 @@ input:checked + .slider:before {
 }*/
 
 .tech-circle {
-    background-color: var(--grey);
+    background-color: var(--white);
     padding: 5px;
     border-radius: 50%; 
     height: 30px;
@@ -732,6 +733,10 @@ body.dark-mode .slider {
 
 body.dark-mode .slider-img {
   color: var(--grey);
+}
+
+body.dark-mode .tech-circle {
+  background-color: var(--grey);
 }
 
 
