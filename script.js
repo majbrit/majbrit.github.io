@@ -20,7 +20,9 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+const part1 = "proton";
+const part2 = "me";
+document.getElementById("liames").textContent =  "ner [at] " + part1 + " [dot] " + part2;
 
 const animationTexts = document.getElementsByClassName("animated-text");
 for (let i = 0; i < animationTexts.length; i++) {

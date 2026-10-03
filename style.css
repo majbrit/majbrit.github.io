@@ -356,6 +356,8 @@ h1{
   margin-right: 40px;
   margin-left: -30px;
   margin-top: 30px;
+  
+  transform: scaleX(-1);
 }
 
 
@@ -567,15 +569,30 @@ input:checked + .slider:before {
 }
 
 .location {
-  display: inline-flex;      
+  display: flex;      
   align-items: center;       
-  gap: 6px;                  
+  gap: 6px;        
+  margin-bottom: 0px;          
+}
+
+.liame {   
+  display: flex;      
+  align-items: center;  
+  margin-top: 0px;
+  margin-bottom: 24px;
 }
 
 .location-icon {
   width: 16px;               
   height: 16px;
   fill: currentColor;        
+}
+
+.liame-icon {
+  width: 16px;               
+  height: 16px;
+  fill: currentColor; 
+  margin-right: 6px;
 }
 
 .projects-button {
@@ -842,6 +859,10 @@ body.dark-mode .tech-circle {
     position: absolute;
     right: 50px;
     top: 20px;
+  }
+
+  .location, .liame {
+    justify-content: center;
   }
 }
 
