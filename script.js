@@ -18,11 +18,12 @@ window.addEventListener("DOMContentLoaded", () => {
             document.documentElement.classList.remove("no-transition");
         }, 50); 
     });
+    const part1 = "proton";
+    const part2 = "me";
+    document.getElementById("liames").textContent =  "ner [at] " + part1 + " [dot] " + part2;
 });
 
-const part1 = "proton";
-const part2 = "me";
-document.getElementById("liames").textContent =  "ner [at] " + part1 + " [dot] " + part2;
+
 
 const animationTexts = document.getElementsByClassName("animated-text");
 for (let i = 0; i < animationTexts.length; i++) {
